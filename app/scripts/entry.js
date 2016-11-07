@@ -1,8 +1,9 @@
 // import the stylesheet. this is necessary so that webpack will compile all the sass into css and then build it into our style.css file
 import './../styles/main.scss';
+
 import React from 'react';
 import ReactDOM from 'react-dom';
-import { Router, Route, hashHistory, IndexRoute, Link } from 'react-router';
+import { Router, Route, browserHistory, IndexRoute, Link } from 'react-router';
 
 import App from './app';
 import Home from './Components/home';
@@ -16,5 +17,5 @@ const router = (
 	</Router>
 );
 
-ReactDOM.render(router,document.getElementById('entry'));
+ReactDOM.render(router, document.getElementById('entry'));
 
