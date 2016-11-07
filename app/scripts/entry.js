@@ -6,7 +6,8 @@ import ReactDOM from 'react-dom';
 import { Router, Route, browserHistory, IndexRoute, Link } from 'react-router';
 
 import App from './app';
-import Home from './Components/home';
+import Home from './Components/Home';
+
 
 const router = (
 	<Router history={browserHistory}>

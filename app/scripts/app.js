@@ -6,8 +6,8 @@ export default React.createClass({
 	render: function() {
 		return (
 			<div>
-				<div>
-					<Header />
+				<Header />
+				<div>	
 					{this.props.children}
 				</div>
 				<Footer />

@@ -6,6 +6,7 @@ export default React.createClass({
 		return (
 			<div>
 				<Link to="/"><h1>Scrambled</h1></Link>
+				<p>if you see this, header is here</p>
 			</div>
 		);
 	}
