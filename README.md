@@ -1,4 +1,5 @@
-# Basic Webpack Boilerplate
+# Using a Basic Webpack Boilerplate by the fabulous
+##NicerHugs
 
 With the following features:
 

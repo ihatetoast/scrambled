@@ -1,6 +1,22 @@
+// HEADERS	2-6					font-family: 'Shadows Into Light Two', cursive;
+// NAV AND CREDITS AT FOOTER	font-family: 'Covered By Your Grace', cursive;
+// REGULAR TEXT					font-family: 'Roboto', sans-serif;
+
 @import 'variables';
 
 body {
   background: $light-grey;
-  background-image: url(../assets/orangecat.jpg);
+  // background-image: url(../assets/orangecat.jpg);
+}
+
+h1{
+	font-family: 'Covered By Your Grace', cursive;
+}
+
+
+ h2, h3, h4, h5, h6 {
+ 	font-family: 'Shadows Into Light Two', cursive;
+ }
+p{
+	font-family: 'Roboto', sans-serif;
 }
