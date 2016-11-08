@@ -5,7 +5,7 @@ import { Link } from 'react-router';
 export default React.createClass({
 	render: function() {
 		return (
-			<section>
+			<section  className="temp-bg-home">
 				<p>When I open, this is what will show so I don't have to look for my packing/prep list</p>
 				<h3>Whom to bring</h3>
 				<div>filler div for critter(s)/human component</div>

@@ -4,8 +4,19 @@
 
 @import 'variables';
 
+.temp-bg-header{
+	background: $temp-bg-2;
+}
+.temp-bg-home{
+	background: $temp-bg-1;
+}
+.temp-bg-footer{
+	background: $temp-bg-3;
+}
+
 body {
-  background: $light-grey;
+  // background: $light-grey;
+  background: red; //just while i'm playing with the box model
   // background-image: url(../assets/orangecat.jpg);
 }
 

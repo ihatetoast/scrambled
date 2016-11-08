@@ -1,3 +1,11 @@
+#Scrambled
+##Why? Because I've been going back and forth between Dallas and Austin due to sick family members and have forgotten to pack important things. I hope to make some decisions about what I'll do in Dallas and have a packing list appear. 
+
+## User stories on Trello
+
+
+
+
 # Using a Basic Webpack Boilerplate by the fabulous
 ##NicerHugs
 
