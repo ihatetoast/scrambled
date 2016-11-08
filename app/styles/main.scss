@@ -17,7 +17,7 @@
 body {
   // background: $light-grey;
   background: red; //just while i'm playing with the box model
-  // background-image: url(../assets/orangecat.jpg);
+  margin: 0.25em;
 }
 
 h1{
@@ -30,4 +30,13 @@ h1{
  }
 p{
 	font-family: 'Roboto', sans-serif;
+}
+.scrambledWithEggs{
+	font-size: 10em;
+	margin: 0.2em;
+	color: $yellow;
+	text-shadow: 2px 2px 5px #000;
+}
+.headerWithEggs{
+	background: $night-blue;
 }
