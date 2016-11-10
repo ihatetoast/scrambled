@@ -14,7 +14,10 @@ With the following features:
 * An app directory for development and a dist folder for builds
 * Static compilation of jpg and png images
 
-##Planned using [User stories on Trello](https://trello.com/b/10XRhfJ8/scrambled-app)
+##Planning
+[User stories on Trello](https://trello.com/b/10XRhfJ8/scrambled-app)
+[Flowchart from draw.io](./assets/unscrambled_flowchart.xml)
+
 
 
 
