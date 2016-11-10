@@ -16,7 +16,7 @@ With the following features:
 
 ##Planning
 * [User stories on Trello](https://trello.com/b/10XRhfJ8/scrambled-app)
-* [Flowchart from draw.io](assets/flowchart.png)
+* [Flowchart from draw.io](./assets/flowchart.png)
 
 
 
