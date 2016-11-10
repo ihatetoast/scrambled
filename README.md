@@ -15,8 +15,8 @@ With the following features:
 * Static compilation of jpg and png images
 
 ##Planning
-*[User stories on Trello](https://trello.com/b/10XRhfJ8/scrambled-app)
-*[Flowchart from draw.io](assets/lowchart.png)
+* [User stories on Trello](https://trello.com/b/10XRhfJ8/scrambled-app)
+* [Flowchart from draw.io](assets/flowchart.png)
 
 
 
