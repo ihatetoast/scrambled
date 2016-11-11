@@ -6,8 +6,10 @@ export default React.createClass({
 	render: function() {
 		return (
 			<div>
-				<Header />
-				<div>	
+				<div className="row">
+					<Header />
+				</div>
+				<div className="container">	
 					{this.props.children}
 				</div>
 				<Footer />
