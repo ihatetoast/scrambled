@@ -3,7 +3,7 @@ import './../styles/main.scss';
 
 import React from 'react';
 import ReactDOM from 'react-dom';
-import { Router, Route, browserHistory, IndexRoute, Link } from 'react-router';
+import { Router, Route, hashHistory, IndexRoute, Link } from 'react-router';
 
 import App from './app';
 import Home from './Components/Home';
@@ -12,10 +12,9 @@ import Scrammin from './Components/Scrammin';
 
 
 const router = (
-	<Router history={browserHistory}>
+	<Router history={hashHistory}>
 		<Route path="/" component={App}>
 			<IndexRoute component={Home} />
-			<Route path="/home" component={Home} />
 			<Route path="/scrammin" component={Scrammin}/>
 			<Route path="/packin" component={Packin}/>
 
