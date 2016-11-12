@@ -17,7 +17,6 @@ const router = (
 			<IndexRoute component={Home} />
 			<Route path="/scrammin" component={Scrammin}/>
 			<Route path="/packin" component={Packin}/>
-
 		</Route>
 	</Router>
 );
