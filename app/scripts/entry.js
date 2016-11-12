@@ -7,6 +7,8 @@ import { Router, Route, browserHistory, IndexRoute, Link } from 'react-router';
 
 import App from './app';
 import Home from './Components/Home';
+import Packin from './Components/Packin';
+import Scrammin from './Components/Scrammin';
 
 
 const router = (
@@ -14,6 +16,9 @@ const router = (
 		<Route path="/" component={App}>
 			<IndexRoute component={Home} />
 			<Route path="/home" component={Home} />
+			<Route path="/scrammin" component={Scrammin}/>
+			<Route path="/packin" component={Packin}/>
+
 		</Route>
 	</Router>
 );

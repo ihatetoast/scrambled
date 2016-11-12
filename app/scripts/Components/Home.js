@@ -1,16 +1,13 @@
 import React from 'react';
 import { Link } from 'react-router';
+import PlanOrPack from './PlanOrPack';
 // import $ from 'jquery'
 
 export default React.createClass({
 	render: function() {
 		return (
 			<section>
-				<div className="eggBtnHldr">
-					<h2>Are you plannin' on scrammin' or packalackin'?</h2>
-					<button className="btnHomeEgg">Scrammin'</button>
-					<button className="btnHomeEgg">Packalackin'</button>
-				</div>
+				<PlanOrPack />
 			</section>
 		);
 	}

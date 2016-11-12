@@ -18,6 +18,11 @@ With the following features:
 #### [User stories on Trello](https://trello.com/b/10XRhfJ8/scrambled-app)
 #### ![Flowchart from draw.io](app/assets/flowchart.png)
 
+<!-- http://ihatetoast-unscrambled.surge.sh/ 
+cd into dist folder and run webpack build then surge from dist folder
+
+-->
+
 
 
 
