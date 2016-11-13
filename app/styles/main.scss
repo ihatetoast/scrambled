@@ -125,7 +125,7 @@ a{
 	margin: 2em auto;
 
 }
-.btnHomeEgg{
+.btnEgg{
 	font-family: 'Covered By Your Grace', cursive;
 	letter-spacing: 2px;
 	color: $pink-red;
@@ -144,6 +144,16 @@ a{
 		box-shadow: 0 0 10px 2px $night-blue;
 	}
 }
+.btnEggHome{
+	width: 65.83px;
+	height: 93px;
+	border: none;
+	-webkit-border-radius: 63px 63px 63px 63px / 108px 108px 72px 72px;
+	border-radius:         50%  50%  50%  50%  / 60%   60%   40%  40%;
+	background-image: radial-gradient(farthest-corner at 28px 24px, #F1E3CC 14%, #E2C698 40%, #C4957F 82%);
+	margin-bottom: 6em;
+	margin-top: 1em;
+}
 
 //***************************//
 //          PHABLET          //
@@ -160,7 +170,7 @@ a{
 	h2 {
 		font-size: 1.5em;
 	}
-	.btnHomeEgg{
+	.btnEgg{
 		margin: 0 2em;
 	}
 }
@@ -180,7 +190,7 @@ a{
 	h2 {
 		font-size: 2em;
 	}
-	.btnHomeEgg{
+	.btnEgg{
 		margin: 0 3em;
 	}
 }
@@ -202,7 +212,7 @@ a{
 	h2 {
 	font-size: 3em;
 	}
-	.btnHomeEgg{
+	.btnEgg{
 		margin: 0 5em;
 	}
 }

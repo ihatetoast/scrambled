@@ -8,14 +8,14 @@ import { Router, Route, hashHistory, IndexRoute, Link } from 'react-router';
 import App from './app';
 import Home from './Components/Home';
 import Packin from './Components/Packin';
-import Scrammin from './Components/Scrammin';
+import Plannin from './Components/Plannin';
 
 
 const router = (
 	<Router history={hashHistory}>
 		<Route path="/" component={App}>
 			<IndexRoute component={Home} />
-			<Route path="/scrammin" component={Scrammin}/>
+			<Route path="/plannin" component={Plannin}/>
 			<Route path="/packin" component={Packin}/>
 		</Route>
 	</Router>
