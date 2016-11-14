@@ -144,6 +144,8 @@ a{
 		box-shadow: 0 0 10px 2px $night-blue;
 	}
 }
+
+
 .btnEggHome{
 	width: 65.83px;
 	height: 93px;
@@ -153,6 +155,22 @@ a{
 	background-image: radial-gradient(farthest-corner at 28px 24px, #F1E3CC 14%, #E2C698 40%, #C4957F 82%);
 	margin-bottom: 6em;
 	margin-top: 1em;
+}
+.guncannoli {
+	text-align: center;
+	width: 350px;
+	background: #c6f2ec;
+	margin-bottom: 5em;
+	background: -moz-linear-gradient(top, #c6f2ec 0%, #c6f2ec 30%, #c6f2ec 34%, #f2cb91 49%, #b68d4c 85%, #211e14 100%);
+	background: -webkit-gradient(left top, left bottom, color-stop(0%, #c6f2ec), color-stop(30%, #c6f2ec), color-stop(34%, #c6f2ec), color-stop(49%, #f2cb91), color-stop(85%, #b68d4c), color-stop(100%, #211e14));
+	background: -webkit-linear-gradient(top, #c6f2ec 0%, #c6f2ec 30%, #c6f2ec 34%, #f2cb91 49%, #b68d4c 85%, #211e14 100%);
+	background: -o-linear-gradient(top, #c6f2ec 0%, #c6f2ec 30%, #c6f2ec 34%, #f2cb91 49%, #b68d4c 85%, #211e14 100%);
+	background: -ms-linear-gradient(top, #c6f2ec 0%, #c6f2ec 30%, #c6f2ec 34%, #f2cb91 49%, #b68d4c 85%, #211e14 100%);
+	background: linear-gradient(to bottom, #c6f2ec 0%, #c6f2ec 30%, #c6f2ec 34%, #f2cb91 49%, #b68d4c 85%, #211e14 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#c6f2ec', endColorstr='#211e14', GradientType=0 );
+	img{
+		width: 300px;
+	}
 }
 
 //***************************//

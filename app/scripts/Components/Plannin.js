@@ -47,7 +47,8 @@ export default React.createClass({
 		return (
 			<section>
 				<div className="scramListsHolder">
-					<h3>How you gonna get there? Who's goin'? Watcha doin'?</h3>
+					<Link to="/"><button className="btnHomeEgg" >Home</button></Link>
+					<h2>How you gonna get there? Who's goin'? Watcha doin'?</h2>
 					<form onSubmit={this.handleFormSubmit}>
 						<h3>How are you getting to Dallas?</h3>
 						<div className="radio">
@@ -141,7 +142,7 @@ export default React.createClass({
 						<div className="radio">
 							<label>
 							<input type="radio" name='fancy' className='radio' value="no" checked={this.state.selectedGoingOut === "no"} onChange={this.handleGoingOut}/>
-							Hell no.
+							Nooooo way!
 							</label>
 						</div>
 						<button className="btnEggHome" type="submit">Save</button>
