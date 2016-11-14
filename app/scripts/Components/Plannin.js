@@ -50,7 +50,8 @@ export default React.createClass({
 					<Link to="/"><button className="btnHomeEgg" >Home</button></Link>
 					<h2>How you gonna get there? Who's goin'? Watcha doin'?</h2>
 					<form onSubmit={this.handleFormSubmit}>
-						<h3>How are you getting to Dallas?</h3>
+						<h3>Transportation</h3>
+						<div className="biggerboat"><img src={require('./../../assets/biggerboat1.jpg')}/></div>
 						<div className="radio">
 							<label>
 							<input type="radio" name='transportation' className='radio' value="car" checked={this.state.selectedTrans === 'car'} onChange={this.handleTransChange}/>
@@ -69,7 +70,8 @@ export default React.createClass({
 							Motorcycle
 							</label>
 						</div>
-						<h3>Where are you staying?</h3>
+
+						<h3>Accommodation</h3>
 						<div className="radio">
 							<label>
 							<input type="radio" name='residence' className='radio' value="pooh" checked={this.state.selectedRes === 'pooh'} onChange={this.handleResChange}/>
@@ -94,7 +96,7 @@ export default React.createClass({
 							La Quinta
 							</label>
 						</div>
-						<h3>Who is going?</h3>
+						<h3>Passengers</h3>
 						<div className="radio">
 							<label>
 							<input type="radio" name='pets' className='radio' value="hounds and cats" checked={this.state.selectedPets === "hounds and cats"} onChange={this.handlePets}/>
@@ -119,30 +121,30 @@ export default React.createClass({
 							No pets
 							</label>
 						</div>
-						<h3>Are you going to run?</h3>
+						<h3>Exercise</h3>
 						<div className="radio">
 							<label>
 							<input type="radio" name='run' className='radio' value="yes" checked={this.state.selectedRun === "yes"} onChange={this.handleRun}/>
-							Yes
+							Running
 							</label>
 						</div>
 						<div className="radio">
 							<label>
 							<input type="radio" name='run' className='radio' value="no" checked={this.state.selectedRun === "no"} onChange={this.handleRun}/>
-							No
+							Slacking
 							</label>
 						</div>
-						<h3>Are you going out any place fohncee?</h3>
+						<h3>Socializing</h3>
 						<div className="radio">
 							<label>
 							<input type="radio" name='fancy' className='radio' value="yes" checked={this.state.selectedGoingOut === "yes"} onChange={this.handleGoingOut}/>
-							If I must.
+							Sure
 							</label>
 						</div>
 						<div className="radio">
 							<label>
 							<input type="radio" name='fancy' className='radio' value="no" checked={this.state.selectedGoingOut === "no"} onChange={this.handleGoingOut}/>
-							Nooooo way!
+							Nerp
 							</label>
 						</div>
 						<button className="btnEggHome" type="submit">Save</button>
