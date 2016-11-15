@@ -65,12 +65,20 @@ p{
 button{
 	font-family: 'Covered By Your Grace', cursive;
 	letter-spacing: 2px;
+	img{
+		width: 25px;
+		margin-top: 17px;
+		margin-left: 2px;
+	}
 }
 h2 {
 	font-size: 1em;
 }
 a{
 	text-decoration: none;
+}
+ul{
+	list-style: none;
 }
 .scrambledWithEggs{
 	font-size: 3em;
@@ -88,12 +96,40 @@ a{
 		width: 40px;
 	}
 }
+
+.radio{
+	line-height: 1.5em;
+	label{
+		margin-left:1em;
+	}
+	input{
+		margin-right: 1em;
+		color: red;
+	}
+}
+.category{
+	font-family: 'Shadows Into Light Two', cursive;
+	font-size: 1.5em;
+	margin-top: 0.75em;
+}
+.subcategory{
+	margin-top: 0.25em;
+	margin-bottom: 0.75em;
+	li{
+		padding: 2px 50px;
+		line-height: 1em;
+		height: 1em;
+		margin: 0 0 0.5em 0;
+	}
+}
+
 .footer{
 	position:fixed;
 	left:0px;
 	bottom:0px;
 	width:100%;
 	height: 3.44em;
+	margin-top: 2em;
 	padding-bottom: 0.5em;
 }
 .credits{
@@ -127,35 +163,58 @@ a{
 }
 .btnEgg{
 	font-family: 'Covered By Your Grace', cursive;
-	letter-spacing: 2px;
 	color: $pink-red;
-	width: 126px;
-	height: 180px;
-	margin: 1em 0.5em;
 	border: none;
 	-webkit-border-radius: 63px 63px 63px 63px / 108px 108px 72px 72px;
 	border-radius:         50%  50%  50%  50%  / 60%   60%   40%  40%;
-	background-image: radial-gradient(farthest-corner at 45px 64px, #F1E3CC 14%, #E2C698 40%, #C4957F 82%);
+	margin-bottom: 6em;
+	margin-top: 1em;
 	&:hover{
-		letter-spacing: 4.5px; 
 		text-shadow: 1px 1px $night-blue;
 		-moz-box-shadow: 0 0 10px 2px $night-blue;
 		-webkit-box-shadow: 0 0 10px 2px $night-blue;
 		box-shadow: 0 0 10px 2px $night-blue;
 	}
 }
-
-
-.btnEggHome{
-	width: 65.83px;
-	height: 93px;
-	border: none;
-	-webkit-border-radius: 63px 63px 63px 63px / 108px 108px 72px 72px;
-	border-radius:         50%  50%  50%  50%  / 60%   60%   40%  40%;
-	background-image: radial-gradient(farthest-corner at 28px 24px, #F1E3CC 14%, #E2C698 40%, #C4957F 82%);
+.majorBtnEgg{
+	width: 126px;//31.75// //126
+	height: 180px;//45////180
+	margin: 1em 0.5em;
+	background-image: radial-gradient(farthest-corner at 45px 64px, #F1E3CC 14%, #E2C698 40%, #C4957F 82%);
+	letter-spacing: 2px;
+	&:hover{
+		letter-spacing: 4.5px; 
+	}
+}
+.minorBtnEgg{
+	width: 45px;//31.75// //126
+	height: 60px;//45////180
 	margin-bottom: 6em;
 	margin-top: 1em;
+	background-image: radial-gradient(farthest-corner at 45px 64px, #F1E3CC 14%, #E2C698 40%, #C4957F 82%);
+	letter-spacing: 0em;
+	&:hover{
+		letter-spacing: 0.15em; 
+	}
 }
+.homeEggBtn{
+	font-family: 'Covered By Your Grace', cursive;
+	color: $pink-red;
+	letter-spacing: 0em;
+	height: 32.91px;
+	width: 46.5px;
+	border: none;
+	border-radius: 40%  60%  60%  40%  / 50%   50%   50%  50%;
+	background-image: radial-gradient(farthest-corner at 20px 16px, #F1E3CC 14%, #E2C698 40%, #C4957F 82%);
+	margin-top: 0.5em;
+	&:hover {
+		letter-spacing: 0.15em;
+		text-shadow: 1px 1px $night-blue;
+		text-decoration: none;
+		box-shadow: 0 0 5px 1px $night-blue;
+	}
+}
+
 .guncannoli {
 	text-align: center;
 	width: 350px;
@@ -236,6 +295,9 @@ a{
 	}
 	.btnEgg{
 		margin: 0 5em;
+	}
+	.minorBtnEgg{
+		margin: 2em 0 5em 2em;
 	}
 }
 

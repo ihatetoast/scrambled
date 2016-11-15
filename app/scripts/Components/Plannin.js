@@ -47,11 +47,13 @@ export default React.createClass({
 		return (
 			<section>
 				<div className="scramListsHolder">
-					<Link to="/"><button className="btnHomeEgg" >Home</button></Link>
+					<Link to="/"><button className="homeEggBtn" >Home</button></Link>
 					<h2>How you gonna get there? Who's goin'? Watcha doin'?</h2>
 					<form onSubmit={this.handleFormSubmit}>
-						<h3>Transportation</h3>
-						<div className="biggerboat"><img src={require('./../../assets/biggerboat1.jpg')}/></div>
+						<div className="biggerboat">
+							<img src={require('./../../assets/biggerboat1.jpg')}/>
+						</div>
+						<h3 className="category">Transportation</h3>
 						<div className="radio">
 							<label>
 							<input type="radio" name='transportation' className='radio' value="car" checked={this.state.selectedTrans === 'car'} onChange={this.handleTransChange}/>
@@ -71,7 +73,7 @@ export default React.createClass({
 							</label>
 						</div>
 
-						<h3>Accommodation</h3>
+						<h3  className="category">Accommodation</h3>
 						<div className="radio">
 							<label>
 							<input type="radio" name='residence' className='radio' value="pooh" checked={this.state.selectedRes === 'pooh'} onChange={this.handleResChange}/>
@@ -96,7 +98,7 @@ export default React.createClass({
 							La Quinta
 							</label>
 						</div>
-						<h3>Passengers</h3>
+						<h3  className="category">Passengers</h3>
 						<div className="radio">
 							<label>
 							<input type="radio" name='pets' className='radio' value="hounds and cats" checked={this.state.selectedPets === "hounds and cats"} onChange={this.handlePets}/>
@@ -121,7 +123,7 @@ export default React.createClass({
 							No pets
 							</label>
 						</div>
-						<h3>Exercise</h3>
+						<h3  className="category">Exercise</h3>
 						<div className="radio">
 							<label>
 							<input type="radio" name='run' className='radio' value="yes" checked={this.state.selectedRun === "yes"} onChange={this.handleRun}/>
@@ -134,7 +136,7 @@ export default React.createClass({
 							Slacking
 							</label>
 						</div>
-						<h3>Socializing</h3>
+						<h3  className="category">Socializing</h3>
 						<div className="radio">
 							<label>
 							<input type="radio" name='fancy' className='radio' value="yes" checked={this.state.selectedGoingOut === "yes"} onChange={this.handleGoingOut}/>
@@ -147,7 +149,7 @@ export default React.createClass({
 							Nerp
 							</label>
 						</div>
-						<button className="btnEggHome" type="submit">Save</button>
+						<button className="btnEgg minorBtnEgg" type="submit">Save</button>
 					</form>	
 				</div>
 			</section>
@@ -186,7 +188,7 @@ export default React.createClass({
 	},
 	handleFormSubmit: function (formSubmitEvent) {
 		formSubmitEvent.preventDefault();
-		console.log('You have pressed my buttons.');
+		alert('You have pressed my buttons. I am not a finished project. Don\'t judge. I see the shoes you\'re wearing.');
 		//see the notes above
 	}
 });
