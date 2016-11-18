@@ -1,5 +1,11 @@
 import React from 'react';
 
+// const transportation = [
+// 	{ label: 'My car', value: 'car' },
+// 	{ label: 'Megabus', value: 'megabus' },
+// 	{ label: 'Motorcycle', value: 'motorcycle' }
+// ];
+
 export default React.createClass({
 	getInitialState: function () {
 		return {
@@ -9,28 +15,29 @@ export default React.createClass({
 	render: function() {
 		return (
 			<div>
-				<div className="biggerboat">
+				<div className="eggPics">
 					<img src={require('./../../../assets/biggerboat1.jpg')}/>
 				</div>
-				<h3 className="category">Transportation</h3>
+				<h3 className="category">I'm going by</h3>
 				<div className="radio">
 					<label>
 					<input type="radio" name='transportation' className='radio' value="car" checked={this.state.selectedTrans === 'car'} onChange={this.handleTransChange}/>
-					My car
+					car
 					</label>
 				</div>
 				<div className="radio">
 					<label>
-					<input type="radio" name='transportation' className='radio' value="megabus" checked={this.state.selectedTrans === 'megabus'} onChange={this.handleTransChange}/>
+					<input type="radio" name='transportation' className='radio' value="Megabus" checked={this.state.selectedTrans === 'Megabus'} onChange={this.handleTransChange}/>
 					Megabus
 					</label>
 				</div>
 				<div className="radio">
 					<label>
 					<input type="radio" name='transportation' className='radio' value="motorcycle" checked={this.state.selectedTrans === 'motorcycle'} onChange={this.handleTransChange}/>
-					Motorcycle or a biggerboat
+					motorcycle or biggerboat
 					</label>
 				</div>
+				<hr className="borderVee"/>
 
 			</div>
 			);
@@ -40,11 +47,6 @@ export default React.createClass({
 			selectedTrans: changeEvent.target.value,
 		});
 		//if megabus is chosen, return a form to have the megabus info
-	},
-	handleFormSubmit: function (formSubmitEvent) {
-		formSubmitEvent.preventDefault();
-		alert('You have pressed my accommodation button. I am not a finished project. Don\'t judge. I see the shoes you\'re wearing.');
-		//see the notes above
 	}
 
 });

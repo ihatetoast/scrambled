@@ -46,12 +46,12 @@ export default React.createClass({
 				<div className="scramListsHolder">
 					<Link to="/"><button className="homeEggBtn" >Home</button></Link>
 					<h2>How you gonna get there? Who's goin'? Watcha doin'?</h2>
+					<form onSubmit={this.handleFormSubmit}>
 						<Transportation />
 						<Accommodation />
 						<Pets />
 						<Running />
 						<Goingout />
-					<form onSubmit={this.handleFormSubmit}>
 						<button className="btnEgg minorBtnEgg" type="submit">Save</button>
 					</form>	
 				</div>

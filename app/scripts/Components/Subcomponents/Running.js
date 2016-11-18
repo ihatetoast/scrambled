@@ -3,25 +3,26 @@ import React from 'react';
 export default React.createClass({
 	getInitialState: function () {
 		return {
-			selectedRun: 'yes'
+			selectedRun: "I plan on running"
 		};
 	},
 	render: function(){
 		return(
 			<div>
-				<h3  className="category">Exercise</h3>
+				<h3  className="category">In terms of exercise, I plan on</h3>
 				<div className="radio">
 					<label>
-					<input type="radio" name='run' className='radio' value="yes" checked={this.state.selectedRun === "yes"} onChange={this.handleRun}/>
-					Running
+					<input type="radio" name='run' className='radio' value="I plan on running" checked={this.state.selectedRun === "I plan on running"} onChange={this.handleRun}/>
+					running
 					</label>
 				</div>
 				<div className="radio">
 					<label>
-					<input type="radio" name='run' className='radio' value="no" checked={this.state.selectedRun === "no"} onChange={this.handleRun}/>
-					Slacking
+					<input type="radio" name='run' className='radio' value="I plan on slacking" checked={this.state.selectedRun === "I plan on slacking"} onChange={this.handleRun}/>
+					slacking
 					</label>
 				</div>
+				<hr className="borderVee"/>
 			</div>
 		)
 	},
@@ -31,11 +32,6 @@ export default React.createClass({
 			selectedRun: changeEvent.target.value,
 		});
 		//running list
-	},
-	handleFormSubmit: function (formSubmitEvent) {
-		formSubmitEvent.preventDefault();
-		alert('You have pressed my buttons. I am not a finished project. Don\'t judge. I see the shoes you\'re wearing.');
-		//see the notes above
 	}
 
 })

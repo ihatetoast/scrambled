@@ -80,6 +80,15 @@ a{
 ul{
 	list-style: none;
 }
+.eggPics{
+		img{
+			width:300px;
+		}
+	}
+.scramListsHolder{
+	margin: 0 auto;
+	padding: 0.5em;
+}
 .scrambledWithEggs{
 	font-size: 3em;
 	margin: 0.2em;
@@ -236,6 +245,13 @@ ul{
 	img{width: 350px;}
 	// margin: 1em auto;
 }
+hr.borderVee{
+	height: 12px;
+	width: 100%;
+	background: url(./../assets/border_vee.png) repeat-x 0 0;
+    border: 0;
+    margin-bottom: 2em;
+}
 //***************************//
 //          PHABLET          //
 //***************************//
@@ -249,10 +265,15 @@ ul{
 		font-size: 4.5em;
 	}
 	h2 {
-		font-size: 1.5em;
+		font-size: 1.2em;
 	}
 	.btnEgg{
 		margin: 0 2em;
+	}
+	.eggPics{
+		img{
+			width:430px;
+		}
 	}
 }
 //***************************//

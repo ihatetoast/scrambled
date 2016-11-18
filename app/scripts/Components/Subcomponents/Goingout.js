@@ -3,25 +3,26 @@ import React from 'react';
 export default React.createClass({
 	getInitialState: function () {
 		return {
-			selectedGoingOut: 'yes'
+			selectedGoingOut: 'going out'
 		};
 	},
 	render: function(){
 		return(
 			<div>
-				<h3  className="category">Socializing</h3>
+				<h3  className="category">I plan on </h3>
 				<div className="radio">
 					<label>
-					<input type="radio" name='fancy' className='radio' value="yes" checked={this.state.selectedGoingOut === "yes"} onChange={this.handleGoingOut}/>
-					Sure
+					<input type="radio" name='fancy' className='radio' value="going out" checked={this.state.selectedGoingOut === "going out"} onChange={this.handleGoingOut}/>
+					going out
 					</label>
 				</div>
 				<div className="radio">
 					<label>
-					<input type="radio" name='fancy' className='radio' value="no" checked={this.state.selectedGoingOut === "no"} onChange={this.handleGoingOut}/>
-					Nerp
+					<input type="radio" name='fancy' className='radio' value="staying in" checked={this.state.selectedGoingOut === "staying in"} onChange={this.handleGoingOut}/>
+					staying in
 					</label>
 				</div>
+				<hr className="borderVee"/>
 			</div>	
 		)
 	},	
@@ -30,11 +31,5 @@ export default React.createClass({
 			selectedGoingOut: changeEvent.target.value,
 		});
 		//bling list
-	},
-	handleFormSubmit: function (formSubmitEvent) {
-		formSubmitEvent.preventDefault();
-		alert('You have pressed my buttons. I am not a finished project. Don\'t judge. I see the shoes you\'re wearing.');
-		//see the notes above
 	}
-
 })
