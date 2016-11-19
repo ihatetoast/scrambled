@@ -16,7 +16,7 @@ export default React.createClass({
 		return (
 			<div>
 				<div className="eggPics">
-					<img src={require('./../../../assets/biggerboat1.jpg')}/>
+					<img src={require('./../../../assets/biggerboat.png')}/>
 				</div>
 				<h3 className="category">I'm going by</h3>
 				<div className="radio">

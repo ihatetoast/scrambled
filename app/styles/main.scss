@@ -54,11 +54,10 @@ body {
 h1{
 	font-family: 'Covered By Your Grace', cursive;
 }
-
-
- h2, h3, h4, h5, h6 {
+h2, h3, h4, h5, h6 {
  	font-family: 'Shadows Into Light Two', cursive;
- }
+ 	margin-bottom: 0.2em;
+}
 p{
 	font-family: 'Roboto', sans-serif;
 }
@@ -71,7 +70,7 @@ button{
 		margin-left: 2px;
 	}
 }
-h2 {
+h2, h3 {
 	font-size: 1em;
 }
 a{
@@ -80,6 +79,7 @@ a{
 ul{
 	list-style: none;
 }
+
 .eggPics{
 		img{
 			width:300px;
@@ -107,9 +107,10 @@ ul{
 }
 
 .radio{
-	line-height: 1.5em;
+	line-height: 1em;
 	label{
 		margin-left:1em;
+		font-size: 0.8em;
 	}
 	input{
 		margin-right: 1em;
@@ -118,7 +119,6 @@ ul{
 }
 .category{
 	font-family: 'Shadows Into Light Two', cursive;
-	font-size: 1.5em;
 	margin-top: 0.75em;
 }
 .subcategory{
@@ -246,9 +246,9 @@ ul{
 	// margin: 1em auto;
 }
 hr.borderVee{
-	height: 12px;
+	height: 15px;
 	width: 100%;
-	background: url(./../assets/border_vee.png) repeat-x 0 0;
+	background: url(./../assets/border_egg.png) repeat-x 0 0;
     border: 0;
     margin-bottom: 2em;
 }
@@ -292,6 +292,9 @@ hr.borderVee{
 	h2 {
 		font-size: 2em;
 	}
+	h3{
+		font-size: 1.2em;
+	}
 	.btnEgg{
 		margin: 0 3em;
 	}
@@ -312,7 +315,10 @@ hr.borderVee{
 		font-size: 7em;
 	}
 	h2 {
-	font-size: 3em;
+		font-size: 3em;
+	}
+	h3{
+		font-size: 2em;
 	}
 	.btnEgg{
 		margin: 0 5em;

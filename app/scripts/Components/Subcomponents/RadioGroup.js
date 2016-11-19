@@ -20,7 +20,7 @@ Solution: DRY OUT
 
 	const transportation = [
 	    { label: 'my car', value: 'car' },
-	    { label: 'Megabus', value: 'megabus' },
+	    { label: 'Megabus', value: 'Megabus' },
 	    { label: 'my motorcycle or a bigger boat', value: 'motorcycle' }
 	];
 	const accommodation = [
@@ -30,14 +30,14 @@ Solution: DRY OUT
 	    { label: 'at La Quinta or The Overlook', value: 'la quinta' }
 	];
 	const pets = [
-	    { label: 'all the critters', value: 'critters' },
-	    { label: 'just the hounds', value: 'hounds' },
-	    { label: 'just the cats', value: 'cats' },
-	    { label: 'just myself', value: 'me' }
+	    { label: 'all the critters', value: 'all the critters' },
+	    { label: 'just the hounds', value: 'just the hounds' },
+	    { label: 'just the cats', value: 'just the cats' },
+	    { label: 'just myself', value: 'just myself' }
 	];
 	const running =[
-		{ label: 'running', value: 'running' },
-		{ label: 'slacking', value: 'slacking' }
+		{ label: 'running', value: 'run },
+		{ label: 'slacking', value: 'slack' }
 	];
 	const goingOut =[
 		{ label: 'going out', value: 'going out' },

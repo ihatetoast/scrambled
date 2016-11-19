@@ -3,23 +3,23 @@ import React from 'react';
 export default React.createClass({
 	getInitialState: function () {
 		return {
-			selectedRun: "I plan on running"
+			selectedRun: "run"
 		};
 	},
 	render: function(){
 		return(
 			<div>
-				<h3  className="category">In terms of exercise, I plan on</h3>
+				<h3  className="category">I hope to </h3>
 				<div className="radio">
 					<label>
-					<input type="radio" name='run' className='radio' value="I plan on running" checked={this.state.selectedRun === "I plan on running"} onChange={this.handleRun}/>
-					running
+					<input type="radio" name='run' className='radio' value="run" checked={this.state.selectedRun === "run"} onChange={this.handleRun}/>
+					run
 					</label>
 				</div>
 				<div className="radio">
 					<label>
-					<input type="radio" name='run' className='radio' value="I plan on slacking" checked={this.state.selectedRun === "I plan on slacking"} onChange={this.handleRun}/>
-					slacking
+					<input type="radio" name='run' className='radio' value="slack" checked={this.state.selectedRun === "slack"} onChange={this.handleRun}/>
+					slack
 					</label>
 				</div>
 				<hr className="borderVee"/>
