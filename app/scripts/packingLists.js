@@ -2,7 +2,7 @@ export default [
 	{
 		name: "Basics",
 		id: "1",
-		include: true,
+		include: "yes",
 		items: [
 			"wallet",
 			"home and car keys",
@@ -10,20 +10,20 @@ export default [
 			"backpack"
 		]
 	},
-	{
+		{
 		name: "Sleepwear",
 		id: "2",
-		include: true,
+		include: "yes",
 		items: [
 			"jammies (1 set per 2 days)",
 			"housesocks / slippers",
 			"robe"
 		]
-	}
-	{
+	},
+		{
 		name: "Toiletries",
 		id: "3",
-		include: true,
+		include: "yes",
 		items: [ 
 			"toothbrush",
 			"toothpaste", 
@@ -42,7 +42,7 @@ export default [
 		{
 		name: "Dog",
 		id: "4",
-		include: false,
+		include: "yes",
 		items: [
 			"food (approx 3 cups per day per dog)",
 			"poo bags",
@@ -56,7 +56,7 @@ export default [
 		{
 		name: "Cats",
 		id: "5",
-		include: false,
+		include: "yes",
 		items: [
 			"litterbox, litter, scoop",
 			"food (approx. 1 cup per day)",
@@ -68,7 +68,7 @@ export default [
 		{
 		name: "Cosmetics",
 		id: "6",
-		include: false,
+		include: "yes",
 		items: [
 			"cc cream",
 			"concealer",
@@ -77,11 +77,10 @@ export default [
 			"lips"
 		]
 	}, 
-
-	{
+		{
 		name: "Running",
 		id: "7",
-		include: false,
+		include: "yes",
 		items: [
 			"jog bras",
 			"running shoes",
@@ -92,13 +91,12 @@ export default [
 			"buff / earbags"
 		]
 	},
-	{
+		{
 		name: "Clothes: Staying in",
 		id: "8",
-		include: false,
+		include: "yes",
 		items: [
 			"undies (days gone plus 2)",
-			"bra",
 			"jeans / shorts (1 for 2 days)",
 			"socks & shoes",
 			"shirts (1.5 per day)",
@@ -107,12 +105,13 @@ export default [
 		{
 		name: "Clothes: Going out",
 		id: "9",
-		include: false,
+		include: "yes",
 		items: [
 			"boots / nicer shoes",
 			"nicer shirt",
 			"bling",
-			"handbag"
+			"handbag",
+			"a bra"
 		]
 	}
 ];

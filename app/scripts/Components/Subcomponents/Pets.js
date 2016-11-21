@@ -9,7 +9,10 @@ export default React.createClass({
 	render: function(){
 		return(
 			<div>
-				<h3  className="category">I'm taking</h3>
+				<h3  className="category">I'm taking (will be egg pic)</h3>
+				<div className="eggPics">
+					<img src={'https://cinemeccanica.files.wordpress.com/2012/02/peewee-soap.jpg'}/>
+				</div>
 				<div className="radio">
 					<label>
 					<input type="radio" name='pets' className='radio' value="all the critters" checked={this.state.selectedPets === "all the critters"} onChange={this.handlePets}/>

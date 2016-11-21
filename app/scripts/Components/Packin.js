@@ -1,9 +1,32 @@
 import React from 'react';
 import { Link, hashHistory } from 'react-router';
+import Lists from './../packingLists';
+
 // import $ from 'jquery'
 
 export default React.createClass({
+	getInitialState: function(){
+		let list = Lists.filter((list, i)=>{
+			if(list.include === "yes"){
+				console.log("list name is "+list.name+" list items are "+list.items);//sweet!
+				return true;
+			} else{
+				return false;
+			}
+		});
+		return{list: list}
+	},
 	render: function() {
+		const listName = this.state.list.name.map((name, i)=>{
+			return(
+				<li className="listName" key={i}>{this.state.list.name[i]}</li>
+			);
+		});
+		const listItems = this.state.list.items.map((item, i)=>{
+			return(
+				<li className="listItems" key={i}>{this.state.list.items[i]}</li>
+				);
+		});
 		return (
 			<section>
 				<div className="packListsHolder">
@@ -11,50 +34,20 @@ export default React.createClass({
 					<h2>Packin': What do you leave? What do you take?</h2>
 					<div className="guncannoli"><img src={require('./../../assets/guncannoli.png')}/></div>		
 				</div>
-				<div className="tempDummyList">
-				<h5 className="tempPlanningInstructions">I'm a dummy list for styling</h5>
-				<p className="tempPlanningInstructions">Should be borem ipsum, but I'm full of piss and vinegar, so you get a dummy list. My app; my rules.</p>
-				<h2>Packing list</h2>
-				<p>Tap as you pack. Items will disappear or change to strike-through. I have not yet decided.</p>
 					<ul>
-						<li className="category">Always take</li>
-							<ul className="subcategory">
-								<li>Beep bop boop</li>
-								<li>Yeep yop yoop</li>
-								<li>Deep dop doop</li>
-							</ul>
-						<li className="category">Pet supplies</li>
-							<ul className="subcategory">
-								<li>Poop poo pooper</li>
-								<li>Peep pee peeper</li>
-							</ul>
-						<li className="category">Slacker garb</li>
-							<ul className="subcategory">
-								<li>Blah blah blah</li>
-								<li>Yadda yadda yadda</li>
-								<li>Whatevs</li>
-							</ul>
-						<li className="category">Haiku</li>
-							<ul className="subcategory">
-								<li>I am done with lists</li>
-								<li>Now I need to style this app</li>
-								<li>Then I deal with props.</li>
-							</ul>
-
+						{listName}
+						<ul>
+							{listItems}
+						</ul>
 					</ul>
-				</div>
+			
 				<button className="btnEgg minorBtnEgg" type="submit"><img src={require('./../../assets/refresh.png')}/></button>
 			</section>
 		);
 	}
 });
 
-// <label>
-// 	<input 
-// 	checked = {this.state.user.get('hmStyleSize')==='an apartment, condo, or townhouse'}
-// 	onChange={this.editHmStyleSize}
-// 	type='radio' 
-// 	name='home' 
-// 	className='radio' 
-// 	value='an apartment, condo, or townhouse' />Apartment, Condo, Townhouse
-// </label>
+
+
+				
+

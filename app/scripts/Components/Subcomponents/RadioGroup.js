@@ -18,6 +18,11 @@ Solution: DRY OUT
 	make a generic component for a group of radio buttons.
 	pass in an array (via props) to specify the labels of each radio button in the group
 
+	<RadioGroup name="transportation" onChange={this.handleTransChange} value={this.state.selectedTrans} options={transportation} />
+
+	create a component called `RadioGroup` that uses those props to re-create that same code you just shared
+
+these will be the arrays. leave as comments )
 	const transportation = [
 	    { label: 'my car', value: 'car' },
 	    { label: 'Megabus', value: 'Megabus' },
@@ -44,10 +49,7 @@ Solution: DRY OUT
 		{ label: 'staying in', value: 'staying in' }
 	];
 
-	<RadioGroup name="transportation" onChange={this.handleTransChange} value={this.state.selectedTrans} options={transportation} />
-
-	create a component called `RadioGroup` that uses those props to re-create that same code you just shared
-
+	
 
 
 */
