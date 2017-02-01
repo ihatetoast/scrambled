@@ -11,7 +11,7 @@ export default React.createClass({
 			<div>
 				<h3  className="category">I plan on (make egg pic)</h3>
 				<div className="eggPics">
-					<img src={'https://img.grouponcdn.com/seocms/aCqu8zq91vnkYR6MsGme/Lx-600x390/v1/c600x390.jpg'}/>
+					<img src={require('./../../../assets/katzscene.png')}/>
 				</div>
 				<div className="radio">
 					<label>
